@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutLeaderboardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="1." />
+
+    <TextView
+        android:id="@+id/textViewLeaderboardName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/textViewRank"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewLeaderboardXp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        tools:text="User Display Name (You)" />
+    
+    <TextView
+        android:id="@+id/textViewLeaderboardCurrentUserIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" (You)"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toEndOf="@id/textViewLeaderboardName"
+        app:layout_constraintTop_toTopOf="@id/textViewLeaderboardName"
+        app:layout_constraintBottom_toBottomOf="@id/textViewLeaderboardName"
+        app:layout_constraintEnd_toStartOf="@id/textViewLeaderboardXp"/>
+
+
+    <TextView
+        android:id="@+id/textViewLeaderboardXp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="12345 XP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

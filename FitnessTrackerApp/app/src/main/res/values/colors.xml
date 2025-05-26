@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Basic Theme Colors -->
+    <color name="colorPrimary">#3F51B5</color> <!-- Indigo -->
+    <color name="colorPrimaryVariant">#303F9F</color> <!-- Dark Indigo -->
+    <color name="colorSecondary">#FF4081</color> <!-- Pink Accent -->
+
+    <!-- Other common colors if needed -->
+    <color name="textColorPrimary">#DE000000</color> <!-- 87% Black for text -->
+    <color name="textColorSecondary">#8A000000</color> <!-- 54% Black for secondary text/icons -->
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorSecondaryVeryLight">#FFE0F7</color> <!-- Light Pink, assuming colorSecondary is Pink FF4081 -->
+</resources>

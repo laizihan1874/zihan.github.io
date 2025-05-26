@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity_types">
+        <item>Select Activity Type</item> <!-- Prompt -->
+
+        <!-- GPS-focused / Potentially Auto-detected or with map data -->
+        <item>Running (GPS)</item>
+        <item>Cycling (GPS)</item>
+        
+        <!-- General / Manual Entry Types -->
+        <item>Walking</item> <!-- Can be with or without GPS data from ActivityLog.pathPoints -->
+        <item>Hiking</item>  <!-- Can be with or without GPS data -->
+        <item>Swimming (Pool)</item>
+        <item>Weight Training</item>
+        <item>Yoga</item>
+        <item>HIIT</item>
+        <item>Pilates</item>
+        <item>Team Sport (General)</item>
+        <item>Dancing</item>
+        <item>Martial Arts</item>
+        
+        <item>General Workout</item> <!-- Generic fallback for manual entry -->
+        <item>Other</item> <!-- Fallback for types not listed -->
+    </string-array>
+
+    <!-- Gender options are already here, ensure they remain if this file is overwritten -->
+    <string-array name="gender_options">
+        <item>Prefer not to say</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>

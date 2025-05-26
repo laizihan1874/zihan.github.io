@@ -1,0 +1,50 @@
+# Folders
+.gradle/
+build/
+captures/
+.idea/
+.cxx/ # C/C++ NDK related
+local.properties
+
+# Files
+*.iml
+*.hprof
+*.keystore
+*.log
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IntelliJ
+*.iws
+*.ipr
+
+# Android Studio
+*.apk
+*.ap_
+*.aab
+*.aar
+*.dex
+*.class
+
+# Gradle
+*.jar
+*.war
+*~
+*.lock
+
+# Specific to this project
+/app/build/
+/app/release/
+/app/debug/
+*.jks
+*.cer
+*.crt
+*.pem
+*.key
+
+# Kover
+*.kover
