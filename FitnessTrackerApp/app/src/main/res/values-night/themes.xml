@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- For night theme, you might want to use darker versions of your primary colors,
+         or keep them the same and rely on Material Components to adjust text/icon colors.
+         Using the same primary/secondary as day theme for simplicity here,
+         but ensuring onPrimary/onSecondary are light. -->
+    <style name="Theme.FitnessTrackerApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item> <!-- Using same Indigo as day -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item> <!-- Using same Dark Indigo as day -->
+        <item name="colorOnPrimary">@color/white</item> <!-- Ensure text on primary is light -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondary</item> <!-- Using same Pink as day -->
+        <item name="colorSecondaryVariant">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/black</item> <!-- Text on secondary (Pink) might be better as black or dark gray -->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <!-- windowBackground will likely be dark by default with DayNight theme -->
+    </style>
+</resources>

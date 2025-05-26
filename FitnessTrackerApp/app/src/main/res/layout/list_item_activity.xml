@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/textViewActivityType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Type"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+
+    <TextView
+        android:id="@+id/textViewActivityDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: Jan 1, 2023"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/textViewActivityDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Duration: 30 min"
+            android:textSize="14sp"
+            android:textAppearance="?attr/textAppearanceListItemSecondary"/>
+
+        <TextView
+            android:id="@+id/textViewActivityCalories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calories: 300 kcal"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:textAppearance="?attr/textAppearanceListItemSecondary"/>
+    </LinearLayout>
+
+</LinearLayout>

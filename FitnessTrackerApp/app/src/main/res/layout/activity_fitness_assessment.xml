@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.ui.FitnessAssessmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness Level"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupFitnessLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/radioButtonBeginner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beginner"/>
+            <RadioButton android:id="@+id/radioButtonIntermediate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Intermediate"/>
+            <RadioButton android:id="@+id/radioButtonAdvanced" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Advanced"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary Goals (Select up to 3)"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:id="@+id/layoutPrimaryGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <CheckBox android:id="@+id/checkboxGoalWeightLoss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weight Loss"/>
+            <CheckBox android:id="@+id/checkboxGoalMuscleGain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Muscle Gain"/>
+            <CheckBox android:id="@+id/checkboxGoalEndurance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Endurance"/>
+            <CheckBox android:id="@+id/checkboxGoalGeneralHealth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="General Health"/>
+            <CheckBox android:id="@+id/checkboxGoalStressRelief" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stress Relief"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred Activities (Select multiple)"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:id="@+id/layoutPreferredActivities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <CheckBox android:id="@+id/checkboxActivityRunning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Running"/>
+            <CheckBox android:id="@+id/checkboxActivityCycling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cycling"/>
+            <CheckBox android:id="@+id/checkboxActivityGym" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gym Workout"/>
+            <CheckBox android:id="@+id/checkboxActivityYoga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yoga"/>
+            <CheckBox android:id="@+id/checkboxActivityHiking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hiking"/>
+            <CheckBox android:id="@+id/checkboxActivitySwimming" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Swimming"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biometrics (Optional)"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age (Years)"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="8dp"/>
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weight (kg)"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Height (cm)"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonSaveAssessment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Assessment"/>
+    </LinearLayout>
+</ScrollView>

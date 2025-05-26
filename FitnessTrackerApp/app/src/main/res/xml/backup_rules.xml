@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO Remove the following file path if you want to backup your entire application data -->
+    <exclude domain="database" path="SampleFitDB.db"/>
+    <!-- TODO Specify another file path here if you want to exclude it from backup -->
+</full-backup-content>
